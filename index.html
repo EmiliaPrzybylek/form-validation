@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <title>Podaj dane</title>
 </head>
 <body>
 <div class="box">
     <div class="form">
-    <span id="errors"></span>
-    <form>
-        <input id="name"> <br> Podaj Imię <br>
-        <input id="mail"> <br> Podaj adres e-mail<br>
-        <input id="mail2"> <br> Powtórz adres e-mail<br>
+        <form>
+        <span id="errors"></span><br>
+         
+        Podaj Imię <br> <input id="name"> <br>
+        Podaj adres e-mail<br><input id="mail"> <br> 
+        Powtórz adres e-mail<br><input  id="mail2"> <br> 
+        
         <select id="city">
             <option value="brak">Wybierz miasto</option>
             <option value="Krakow">Krakow</option>
             <option value="Warszawa">Warszawa</option>
             <option value="Opole">Opole</option>
         </select><br>
-        <input type="checkbox" id="rodo">Akceptacja RODO <br>
-        <input type="submit" value="Wyślij">
-    </div>
+        
+        <input type="checkbox" id="rodo"> <label for="rodo">Akceptacja RODO</label>  <br>
+        <input type="submit"  value="Wyślij">
     </form>
+    </div>
 </div>
     
     <script src="js/scripts.js"></script>

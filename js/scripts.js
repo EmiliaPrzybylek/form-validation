@@ -17,6 +17,7 @@ function validate(e) {
     const namePattern = /^[A-ZŁŚĆŻ]+[a-złśćżź]{2,20}$/;
     const testName = namePattern.test(name);
     if(!testName) 
+        
         errors.push('Imię niepoprawne');
     
         
