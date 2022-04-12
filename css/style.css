@@ -36,7 +36,6 @@ span {
     background: linear-gradient(315deg, #0daada, #0e1538, #b63737);
     border-radius: 3%;
     filter: blur(80px);
-    
 }
 
 .box::after {
@@ -49,7 +48,6 @@ span {
     transform: skewX(30deg) skewY(60deg);
     background: linear-gradient(315deg, #0daada, #0e1538, #d34141);
     filter: blur(60px);
-    
 }
 
 .form-box {
@@ -111,7 +109,6 @@ input[type="checkbox"] + label::before, input[type="checkbox"] + label::after {
     transition: .5s;
 }
 
-
 input[type="checkbox"]:checked + label::after {
     content: '✕';
     color: #0e1538;
@@ -122,6 +119,9 @@ input[type="checkbox"]:checked + label::after {
     background: #0daadabd;
 }
 
+input::after {
+    background-color: #0daada;
+}
 
 input, select {
     background-color: #0daada;
@@ -136,3 +136,4 @@ input, select:focus {
     outline: none;
 }
  
+
