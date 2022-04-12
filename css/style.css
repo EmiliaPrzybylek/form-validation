@@ -76,14 +76,16 @@ span {
 
 .rodo-box {
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.rodo-box input, .rodo-box label {
+    cursor: pointer;
 }
 
 .checkbox {
     height: 25px;
     width: 25px;
-    cursor: pointer;
 }
 
 input, select {
@@ -93,8 +95,6 @@ input, select {
     margin: 10px;
     padding: 10px;
     width: 70%;
-    /* height: 30px; */
-    
 }  
 
 input, select:focus {
