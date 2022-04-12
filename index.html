@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,41 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <title>Podaj dane</title>
 </head>
+
 <body>
-<div class="box">
-    <div class="form">
-        <form>
-        <span id="errors"></span><br>
-         
-        Podaj Imię  <br> <span id="errors_name"></span> <br><input id="name">  <br>
-        Podaj adres e-mail<br><input id="mail"> <br> 
-        Powtórz adres e-mail<br><input  id="mail2"> <br> 
-        
-        <select id="city">
-            <option value="brak">Wybierz miasto</option>
-            <option value="Krakow">Krakow</option>
-            <option value="Warszawa">Warszawa</option>
-            <option value="Opole">Opole</option>
-            <option value="Wrocław">Wrocław</option>
-            <option value="Szczecin">Szczecin</option>
-            <option value="Gdańsk">Gdańsk</option>
-            <option value="Łódź">Łódź</option>
-        </select><br>
-        
-        <input type="checkbox" id="rodo"> <label for="rodo">Akceptacja RODO</label>  <br>
-        <input type="submit"  value="Wyślij">
-    </form>
+    <div class="box">
+        <div class="form">
+            <form>
+                <span id="errors"></span>
+
+                <p>Podaj Imię </p>
+                <input id="name">
+                <p>Podaj adres e-mail</p>
+                <input id="mail">
+                <p>Powtórz adres e-mail</p>
+                <input id="mail2">
+
+                <select id="city">
+                    <option value="brak">Wybierz miasto</option>
+                    <option value="Krakow">Krakow</option>
+                    <option value="Warszawa">Warszawa</option>
+                    <option value="Opole">Opole</option>
+                    <option value="Wrocław">Wrocław</option>
+                    <option value="Szczecin">Szczecin</option>
+                    <option value="Gdańsk">Gdańsk</option>
+                    <option value="Łódź">Łódź</option>
+                </select>
+
+                <div class="rodo">
+                    <input type="checkbox" id="rodo">
+                    <label for="rodo">Akceptacja RODO</label>
+                    <input type="submit" value="Wyślij">
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-    
+
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
