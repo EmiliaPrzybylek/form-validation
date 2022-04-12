@@ -11,18 +11,18 @@ function validate(e) {
 
     const placeError = document.querySelector('#errors');
     placeError.innerHTML = '';
-
     let errors = [];
 
     const namePattern = /^[A-ZŁŚĆŻ]+[a-złśćżź]{2,20}$/;
     const testName = namePattern.test(name);
+
     if(!testName) 
         
         errors.push('Imię niepoprawne');
-    
         
     const mailPattern = /^[a-z\d]+[\w.-]*@[a-z\d]+[a-z\d-]*\.[a-z]{2,4}$/i;
     const testMail = mailPattern.test(mail);
+    
     if(!testMail)
         errors.push('Niepoprawny format e-mail');
 
