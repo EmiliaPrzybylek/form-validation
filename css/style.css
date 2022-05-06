@@ -137,4 +137,8 @@ input, select:focus {
     outline: none;
 }
  
+.submit:hover, .reset:hover {
+    background-color: #0daadacc;
+    cursor: pointer;
+}
 
