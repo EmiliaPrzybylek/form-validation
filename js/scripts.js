@@ -22,7 +22,7 @@ function validate(e) {
         
     const mailPattern = /^[a-z\d]+[\w.-]*@[a-z\d]+[a-z\d-]*\.[a-z]{2,4}$/i;
     const testMail = mailPattern.test(mail);
-    
+
     if(!testMail)
         errors.push('Niepoprawny format e-mail');
 
@@ -38,10 +38,11 @@ function validate(e) {
     if(errors.length > 0) {
         placeError.innerHTML = errors.join('<br>');
     } 
-
-    console.log(errors);
+    
     } 
 
 const form = document.querySelector('form');
 
 form.addEventListener('submit', validate);
+
+// zrobić czyszczenie formularza i kmunikat, że dane zostały wysłane
