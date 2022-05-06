@@ -38,11 +38,22 @@ function validate(e) {
     if(errors.length > 0) {
         placeError.innerHTML = errors.join('<br>');
     } 
+
+    const resetBtn = document.querySelector('.reset')
+
+    resetBtn.addEventListener('click', e => {
+        e.preventDefault();
     
-    } 
+        [name, mail, mail2, city, rodo].forEach(el);
+        el.value = '';
+    })
+    
+} 
 
 const form = document.querySelector('form');
-
 form.addEventListener('submit', validate);
+
+
+
 
 // zrobić czyszczenie formularza i kmunikat, że dane zostały wysłane
