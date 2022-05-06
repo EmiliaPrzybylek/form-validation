@@ -1,8 +1,8 @@
 'use strict';
 
-function validate(e) {
+function sendForm(e) {
     e.preventDefault();
-
+    
     const name = this.name.value;
     const mail = this.mail.value;
     const mail2 = this.mail2.value;
@@ -17,12 +17,11 @@ function validate(e) {
     const testName = namePattern.test(name);
 
     if(!testName) 
-        
         errors.push('Imię niepoprawne');
         
     const mailPattern = /^[a-z\d]+[\w.-]*@[a-z\d]+[a-z\d-]*\.[a-z]{2,4}$/i;
     const testMail = mailPattern.test(mail);
-
+        
     if(!testMail)
         errors.push('Niepoprawny format e-mail');
 
@@ -33,27 +32,26 @@ function validate(e) {
         errors.push('Wybierz miasto');
 
     if(!rodo)
-        errors.push('Zaakceptuj RODO')
+        errors.push('Zaakceptuj RODO');
 
-    if(errors.length > 0) {
+    if(name, mail, mail2, city, rodo != '') {
+        errors.push('Formularz został wysłany')}
+
+    if(errors.length > 0) 
         placeError.innerHTML = errors.join('<br>');
-    } 
-
-    const resetBtn = document.querySelector('.reset')
-
-    resetBtn.addEventListener('click', e => {
-        e.preventDefault();
     
+    
+
+    const resetBtn = document.querySelector('.reset');
+    
+    resetBtn.addEventListener('click', () => {
+        
         [name, mail, mail2, city, rodo].forEach(el);
         el.value = '';
-    })
+    });
+
     
 } 
 
 const form = document.querySelector('form');
-form.addEventListener('submit', validate);
-
-
-
-
-// zrobić czyszczenie formularza i kmunikat, że dane zostały wysłane
+form.addEventListener('submit', sendForm);
